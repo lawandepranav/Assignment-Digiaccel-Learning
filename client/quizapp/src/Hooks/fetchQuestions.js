@@ -14,7 +14,8 @@ const dispatch=useDispatch()
      setGetData(prev=> ({...prev, isLoading:true}));
      (async ()=>{
         try{
-let question=await data;
+let question= await data;
+console.log(question)
 if(question.length>0){
     setGetData(prev=> ({...prev, isLoading:false}));
     setGetData(prev=> ({...prev, apiData:question}));

@@ -13,8 +13,6 @@ async function createquiz ( req,res ) {
     })
 }
 
-
-
 module.exports = {
     createquiz
 }
