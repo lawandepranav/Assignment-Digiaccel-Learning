@@ -7,7 +7,7 @@ const Quiz=()=> {
 
     const state=useSelector(state=>state)
     React.useEffect(()=>{
-console.log(state)
+
     },[])
   const Next=()=>{
 
@@ -20,8 +20,9 @@ console.log(state)
         
       <h1>Quiz </h1>
     <Questions/>
+    <button onClick={()=>Prev}>Prev</button>
       <button onClick={()=>Next}>Next</button>
-      <button onClick={()=>Prev}>Prev</button>
+      
     </div>
   );
 }
